@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+//Importamos nuestro componente testimonio
+import {Testimonio} from './componentes/Testimonio';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='contenedor-principal'>
+      <h1>Aplicaciones Web para la 4.0</h1>
+      <Testimonio 
+      nombre='Alan Nahum'
+      pais='Gomez Hernandez'
+      imagen='fondo'
+      cargo='Estudiante de la '
+      empresa='UTD'/>
+      </div>
     </div>
   );
 }
